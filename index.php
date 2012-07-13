@@ -19,7 +19,7 @@ table	td.ston	{background:#fef; color:#fff;}
 	<td class="off"><a href="lon.php">lounge on</a></td>
 	<td class="on"><a href="loff.php">lounge off</a></td>
 <?php
-$heat = file_get_contents('../lightstate', NULL, NULL, 0, 2);
+$heat = file_get_contents('lightstate', NULL, NULL, 0, 2);
 if ($heat == 'of') {
         echo'<td class="stof">off</td>';
 } else {
@@ -30,7 +30,7 @@ if ($heat == 'of') {
 	<td class="off"><a href="porchon.php">room on</a></td>
 	<td class="on"><a href="porchoff.php">room off</a></td>
 <?php
-$heat = file_get_contents('../rmstate', NULL, NULL, 0, 2);
+$heat = file_get_contents('rmstate', NULL, NULL, 0, 2);
 if ($heat == 'of') {
         echo'<td class="stof">off</td>';
 } else {
@@ -41,7 +41,7 @@ if ($heat == 'of') {
         <td class="off"><a href="hon.php">heat on</a></td>
         <td class="on"><a href="hoff.php">heat off</a></td>
 <?php
-$heat = file_get_contents('../hrstate', NULL, NULL, 0, 2);
+$heat = file_get_contents('hrstate', NULL, NULL, 0, 2);
 if ($heat == 'of') {
         echo'<td class="stof">off</td>';
 } else {
