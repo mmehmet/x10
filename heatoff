@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -A1 > /dev/cm19a0
+echo "off" > hrstate
+
+exit 0

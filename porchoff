@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -A10 > /dev/cm19a0
+echo "off" > rmstate
+
+exit 0
